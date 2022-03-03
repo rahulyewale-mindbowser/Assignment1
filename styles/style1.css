@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+.container_s1{
+   
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 10rem 10rem;
+    height: 500px;
+}
+.content_s1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    
+}
+.container_s1 img{
+    width: 90vw;
+    height: 60vh;
+    padding-right: 2rem;
+    
+    box-shadow: 0px 2px 0px 0px whitesmoke;
+}
+#bgColor{
+    background-color: #F7F7F7;
+
+}
+
+/* Images css code */
+
+.lang_images{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 8rem 0 8rem;
+}
+
+.images_wrapper{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+
+/* Security wrapper css */
+.security_wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+.security_content_wrapper{
+    display: flex;
+    
+}
+.both_security_wrapper{
+    padding: 5rem;
+}
+
+/* Hall of Fame css code */
+.hall_fame_wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* height: 200px; */
+    margin-top: 5rem;
+    padding: 0 7rem;
+
+}
+.hfame_images{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.hfame_images img{
+    align-self: center;
+}
+
+/* companies images css code */
+.companies_wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 10rem;
+}
+.company_images{
+    font-weight: 10vh;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+}
+.analysed_wrapper{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.analysed_wrapper h1{
+    font-size: 5vh;
+}
+.analysed_wrapper p{
+    font-size: 4vh;
+}
+
+.effect {
+    position: relative;
+    }
+
+.effect:after, .effect:before {
+    content: "";
+    background: rgb(27, 24, 24);
+    width: 300px;
+    position: absolute;
+    bottom: 15px;
+    top: 70%;
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -moz-box-shadow: 0 15px 10px rgb(14, 11, 11);
+    -webkit-box-shadow: 0 15px 10px rgb(8, 8, 8);
+    box-shadow: 0 15px 10px rgb(27, 24, 24);
+    left: 10px;
+    z-index: -1;
+    }
+
+.effect:before {
+    right: 10px;
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    left: auto;
+    }
+
+@media screen and (max-width:480px) {
+    .container_s1{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .content_s1{
+        margin: 0;
+        text-align: center;
+    }
+    .container_s1 img{
+        width: 90vw;
+        align-self: center;
+        margin-left: 5vw;
+
+    }
+    .images_wrapper,.company_images{
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-self: center;
+        
+    }
+    .security_content_wrapper,.hfame_images,.analysed_wrapper{
+        flex-wrap: wrap;
+    }
+    .company_images img{
+        width: 45vw;
+    }
+}

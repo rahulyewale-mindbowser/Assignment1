@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+
+ /* webinar wrapper css code */
+
+.webinar_wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
+.webinar_wrapper h1{
+    align-self: center;
+}
+.webinar_content_wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+    
+.wrapper{
+    box-sizing: border-box;
+    width: 30vw;
+    background-color: #EEFCFF;
+
+}    
+.wrapper img{
+    width: 25rem;
+}
+button{
+    height: 5%;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: #3DA5D9;
+}
+.wrapper button:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+/* title_wrapper css code */
+
+.title_wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 150px;
+}
+#bgColor{
+    background-color: #F7F7F7;
+
+}
+.title_wrapper button{
+    align-self: center;
+    background-color: #303B60;
+    height: 30%;
+}
+.title_wrapper button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* footer css here */
+footer{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.5rem;
+    padding-left: 10%;
+    background-color: #303B60;
+    color: #FFF;
+}
+
+#icons{
+    font-size: 1.5rem;
+    color: #303B60;
+    background-color: #FFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 1%;
+}
+
+#icons:hover{
+    color: blue;
+    
+}
+
+
+@media screen and (max-width:480px) {
+    .webinar_content_wrapper{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: center;
+        width: 80%;
+    }
+
+    #icons{
+        font-size: 1rem;
+        color: #303B60;
+        background-color: #FFF;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        padding: 3%;
+    }
+
+}

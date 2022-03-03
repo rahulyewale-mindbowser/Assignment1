@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+body{
+    background-color: #FFFFFF;
+}
+/* First wrapper css */
+.main_wrapper{
+    background-color: #1D2951;
+    display: flex;
+    
+}
+nav{
+    background-color: #1D2951 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* position: sticky;
+    position: -moz-sticky;
+    top: 0; */
+    
+    
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav ul li{
+    list-style-type: none;
+    padding: 10px;
+    /* font-family: Poppins,sans-serif; */
+    font-size: 14px;
+    letter-spacing: .085em;
+    line-height: 23px;
+    text-transform: uppercase;
+    font-weight: 400;
+  
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+ul button {
+    height: 5%;
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    border: none;
+}
+.button1{
+    background-color:#1D2951  ;
+    border: 1px solid white;
+}
+.button2{
+    background-color: #3DA5D9;
+    outline: none;
+    
+}
+.second_wrapper{
+    display: flex;
+
+}
+
+.text_container{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 5% 10% 5% 5%;
+    font-weight: 300;
+}
+
+.sw_buttons button{
+    align-self: center;
+    background-color: #3DA5D9;
+    height: 100%;
+    padding: .5rem;
+}
+
+.video_container iframe{
+    display: flex;
+    /* margin: auto; */
+    width: 40vw;
+
+}
+
+/* Review wrpper css */
+
+.review_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F7;
+    /* height: 600px; */
+}
+.review_wrapper h1,.importance_wrapper h1{
+    text-align: center;
+    font-weight: 200;
+    font-size: 5vh;
+
+}
+.review_wrapper img,.simplify_content img{
+    width: 90%;
+}
+
+.review_text{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 50px;
+    font-size: .8rem;
+    
+}
+.review_text h1{
+    font-size: 4vh;
+    
+}
+
+.review_text div{
+   padding-left: 30px;
+}
+
+/* Importance wrapper css */
+
+.importance_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.importance_content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 20px;
+}
+.importance_wrapper img{
+    margin-top: 20px;
+}
+
+/* Award info css code */
+
+.award_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1D2951;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: center;
+    padding: 5rem;
+}
+.award_wrapper h2{
+    padding: 1rem 15rem;
+    font-weight: 300;
+    
+}
+.awardInfo_wrapper{
+    display: flex;
+    padding-top: 2rem;
+    
+}
+.awardInfo_wrapper img{
+    margin: auto;
+    width: 35rem;
+    height: 15rem;
+
+}
+.award_text{
+    display: flex;
+    flex-direction: column;
+   text-align: left;
+   padding: 3rem  0 0 2rem;
+   font-size: 1.3rem;
+   justify-content: space-between;
+
+    
+    
+}
+
+/* simplify wrapper code */
+
+.simplify_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.simplify_wrapper h2{
+    padding-top: 5vh;
+    font-size: 5vh;
+    font-weight: 300;
+    
+
+}
+.simplify_content{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 8rem;
+}
+
+/* .simplify_content img{
+    width: 40rem;
+    height: 20rem;
+    padding-left: 3rem;
+    
+}  */
+.simplify_text h2{
+    font-weight: 200;
+}
+.effect {
+    position: relative;
+    }
+
+.effect:after, .effect:before {
+    content: "";
+    background: #777;
+    width: 300px;
+    position: absolute;
+    bottom: 15px;
+    top: 70%;
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -moz-box-shadow: 0 15px 10px #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    left: 10px;
+    z-index: -1;
+    }
+
+.effect:before {
+    right: 10px;
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    left: auto;
+    }
+
+
+@media screen and (max-width:480px) {
+
+    .sw_buttons button{
+        display: flex;
+        align-self: center;
+        background-color: #3DA5D9;
+        height: 40%;
+        /* padding: .5rem; */
+        margin-top:1rem ;
+    }
+    
+    .second_wrapper{
+    flex-direction: column;
+        
+    }
+    .text_container{
+        padding: 0;
+        align-self: center;
+        margin-bottom: 1vh;
+    }
+
+    .video_container iframe,.awardInfo_wrapper img,.simplify_content img{
+        width: 90vw;
+        align-self: center;
+        margin-left: 5vw;
+        height: 30vh;
+        margin-bottom: 2vh;
+    }
+
+    .review_text,.importance_content{
+        flex-wrap: wrap;
+    }
+    .review_wrapper img{
+        width: 65vw;
+    }
+    .awardInfo_wrapper,.simplify_content{
+        flex-direction: column;
+    }
+}
