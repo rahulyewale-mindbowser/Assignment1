@@ -18,14 +18,26 @@ nav{
     background-color: #1D2951 ;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    /* position: sticky;
-    position: -moz-sticky;
-    top: 0; */
-    
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 5;
     
     
 }
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer; 
+    display: none;
+}
+#check{
+    display: none;
+}
+
 nav ul{
     display: flex;
     justify-content: space-between;
@@ -219,41 +231,129 @@ ul button {
 .simplify_text h2{
     font-weight: 200;
 }
-.effect {
-    position: relative;
+
+
+@media screen and (min-width:480px) and (max-width:768px) {
+
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        position: fixed;
+        width: 98vw;
+        height: 80vh;
+        background-color: white;
+        top: 10px;
+        top: -100;
+        /* right: 20px; */
+        /* left: 30%; */
+        text-align: center;
+        margin-top:7vh ;
+        transition: all 0.10s;
+    }
+    /* nav ul li{
+        color: #1D2951;
+    } */
+    nav ul li a{
+        font-size: 15px;
+        color: #1D2951;
+    }
+    a:hover,a:active{
+        background: none;
+        color: #0082e6;
+
+    }
+    #check:checked ~ul{
+        top: 0;
+        display: none;
+    }
+    ul button{
+        width: 10rem;
+        height: 2rem;
     }
 
-.effect:after, .effect:before {
-    content: "";
-    background: #777;
-    width: 300px;
-    position: absolute;
-    bottom: 15px;
-    top: 70%;
-    -moz-transform: rotate(-3deg);
-    -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    transform: rotate(-3deg);
-    -moz-box-shadow: 0 15px 10px #777;
-    -webkit-box-shadow: 0 15px 10px #777;
-    box-shadow: 0 15px 10px #777;
-    left: 10px;
-    z-index: -1;
+    .sw_buttons button{
+        display: inline-block;
+        align-self: center;
+        background-color: #3DA5D9;
+        height: 60%;
+        /* padding: .5rem; */
+        margin-top:1rem ;
+    }
+    
+    .second_wrapper{
+    flex-direction: column;
+        
+    }
+    .text_container{
+        padding: 0;
+        align-self: center;
+        margin-bottom: 1vh;
     }
 
-.effect:before {
-    right: 10px;
-    -moz-transform: rotate(3deg);
-    -ms-transform: rotate(3deg);
-    -o-transform: rotate(3deg);
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-    left: auto;
+    .video_container iframe,.awardInfo_wrapper img,.simplify_content img{
+        width: 90vw;
+        align-self: center;
+        margin-left: 5vw;
+        height: 70vh;
+        margin-bottom: 2vh;
     }
 
+    .review_text,.importance_content{
+        flex-wrap: wrap;
+    }
+    .review_wrapper img{
+        width: 60vw;
+        height: 100%
+    }
+    .awardInfo_wrapper,.simplify_content{
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width:480px) {
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        position: fixed;
+        width: 98vw;
+        height: 80vh;
+        background-color: white;
+        top: 10px;
+        top: -100;
+        /* right: 20px; */
+        /* left: 30%; */
+        text-align: center;
+        margin-top:7vh ;
+        transition: all 0.10s;
+    }
+    /* nav ul li{
+        color: white;
+    } */
+    nav ul li a{
+        font-size: 15px;
+        color: #1D2951;
+    }
+    a:hover,a:active{
+        background: none;
+        color: #0082e6;
+
+    }
+    #check:checked ~ul{
+        top: 0;
+        display: none;
+    }
+    ul button{
+        width: 10rem;
+        height: 2rem;
+    }
 
     .sw_buttons button{
         display: flex;
@@ -289,6 +389,65 @@ ul button {
         width: 65vw;
     }
     .awardInfo_wrapper,.simplify_content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    .button2{
+        width: 7rem;
+        padding: 0;
+    }
+
+    .sw_buttons button{
+        display: inline-block;
+        align-self: center;
+        background-color: #3DA5D9;
+        height: 60%;
+        /* padding: .5rem; */
+        margin-top:1rem ;
+    }
+    
+    .second_wrapper{
+    flex-direction: column;
+        
+    }
+    .text_container{
+        padding: 0;
+        align-self: center;
+        margin-bottom: 1vh;
+    }
+
+    .awardInfo_wrapper img,.simplify_content img{
+        width: 60vw;
+        align-self: center;
+        margin-left: 5vw;
+        height: 50vh;
+        margin-bottom: 2vh;
+    }
+    .video_container iframe{
+        width: 90vw !important;
+        height: 70vh !important;
+        margin-left: 5vw;
+    }
+
+    .review_text,.importance_content{
+        flex-wrap: wrap;
+    }
+    .review_wrapper img{
+        width: 60vw;
+        height: 100%
+    }
+    .awardInfo_wrapper,.simplify_content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:480px)and (max-width:588px){
+    
+    .sw_buttons button{
+        display: flex;
         flex-direction: column;
     }
 }
