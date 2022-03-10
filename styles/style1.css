@@ -8,22 +8,23 @@
 .container_s1{
    
     display: flex;
-    /* justify-content: space-around; */
     padding: 10rem 10rem;
     height: 500px;
+    width: 100%;
+    /* background-color: green; */
 }
 .content_s1{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-self: center;
+    justify-items: center;
+    margin-top: 10%;
     
 }
 .container_s1 img{
     width: 90vw;
-    height: 60vh;
+    height: 20rem;
     padding-right: 2rem;
-    
+    margin: auto;
     box-shadow: 0px 2px 0px 0px whitesmoke;
 }
 #bgColor{
@@ -38,6 +39,7 @@
     flex-direction: column;
     text-align: center;
     padding: 5rem 8rem 0 8rem;
+    /* background-color: blue; */
 }
 
 .images_wrapper{
@@ -87,7 +89,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 5rem 10rem;
+    /* padding: 5rem 5rem; */
+    /* background-color: blue; */
 }
 .company_images{
     font-weight: 10vh;
@@ -120,6 +123,7 @@
     }
     .container_s1 img{
         width: 90vw;
+        height: 50vh;
         align-self: center;
         margin-left: 5vw;
 
@@ -135,7 +139,30 @@
         flex-wrap: wrap;
     }
     .company_images img{
-        width: 45vw;
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+    }
+
+
+    .lang_images{
+        width: 100%;
+        padding: 0;
+    }
+    .lang_images h1{
+
+        font-size: 1.5rem;
+    }
+    /* .companies_wrapper h1{
+        text-align: left;
+        font-size:2rem ;
+        padding: 0;
+        margin: 0;
+
+    } */
+    .hfame_images img{
+        width: 90vw;
+        height: 40vh;
     }
 }
 
@@ -171,21 +198,18 @@
     }
 }
 
-@media screen and (min-width:768px)and (max-width:1024px) {
+@media screen and (min-width:768px)and (max-width:1080px) {
     .container_s1{
         flex-direction: column;
-        padding: 0;
-        margin: 0;
-        flex-wrap: wrap;
     }
     .content_s1{
         margin: 0;
         text-align: center;
     }
     .container_s1 img{
-        width: 90vw;
+        width: 100%;
         align-self: center;
-        margin-left: 5vw;
+        /* margin-left: 5vw; */
 
     }
     .images_wrapper,.company_images{

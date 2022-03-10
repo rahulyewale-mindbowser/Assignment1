@@ -5,13 +5,11 @@
     box-sizing: border-box;
     font-family: Poppins,sans-serif;
 }
-body{
-    background-color: #FFFFFF;
-}
 /* First wrapper css */
 .main_wrapper{
     background-color: #1D2951;
     display: flex;
+    height: 100vh;
     
 }
 nav{
@@ -24,6 +22,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 5;
+
     
     
 }
@@ -65,7 +64,7 @@ button:hover{
 }
 ul button {
     height: 5%;
-    padding: 5px 20px;
+    padding: 5% 10%;
     border-radius: 20px;
     color: white;
     outline: none;
@@ -82,29 +81,34 @@ ul button {
 }
 .second_wrapper{
     display: flex;
+    /* margin: auto; */
 
 }
 
 .text_container{
+    margin-top: 5rem;
     width: 50vw;
     display: flex;
     flex-direction: column;
     color: white;
     padding: 5% 10% 5% 5%;
     font-weight: 300;
+
 }
 
 .sw_buttons button{
     align-self: center;
     background-color: #3DA5D9;
-    height: 100%;
+    height: 60%;
     padding: .5rem;
+    margin-top: 10%;
 }
 
 .video_container iframe{
     display: flex;
     /* margin: auto; */
-    width: 40vw;
+    margin-top: 5rem;
+    width: 45vw;
 
 }
 
@@ -130,7 +134,7 @@ ul button {
 .review_text{
     display: flex;
     justify-content: space-around;
-    padding: 10px 50px;
+    padding: 5rem 10rem;
     font-size: .8rem;
     
 }
@@ -149,13 +153,17 @@ ul button {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+.importance_wrapper h1{
+    margin-top: 2rem;
 }
 
 .importance_content{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding: 10px 20px;
+    padding: 3rem 7rem;
 }
 .importance_wrapper img{
     margin-top: 20px;
@@ -219,15 +227,19 @@ ul button {
 .simplify_content{
     display: flex;
     justify-content: space-between;
-    margin: 5rem 8rem;
+    /* margin: 5rem 10rem; */
+    padding: 0 10rem;
+    /* width: 100%; */
 }
 
-/* .simplify_content img{
-    width: 40rem;
+.simplify_content img{
+    width: 90%;
     height: 20rem;
-    padding-left: 3rem;
+    /* padding-right: 2rem; */
+    margin: auto;
+    margin-bottom: 5rem;
     
-}  */
+} 
 .simplify_text h2{
     font-weight: 200;
 }
@@ -243,20 +255,14 @@ ul button {
         flex-direction: column;
         justify-content: unset;
         position: fixed;
-        width: 98vw;
-        height: 80vh;
+        width: 100%;
+        height: 80%;
         background-color: white;
         top: 10px;
-        top: -100;
-        /* right: 20px; */
-        /* left: 30%; */
         text-align: center;
         margin-top:7vh ;
         transition: all 0.10s;
     }
-    /* nav ul li{
-        color: #1D2951;
-    } */
     nav ul li a{
         font-size: 15px;
         color: #1D2951;
@@ -279,7 +285,7 @@ ul button {
         display: inline-block;
         align-self: center;
         background-color: #3DA5D9;
-        height: 60%;
+        height: 30%;
         /* padding: .5rem; */
         margin-top:1rem ;
     }
@@ -288,6 +294,11 @@ ul button {
     flex-direction: column;
         
     }
+    .main_wrapper{
+        width: 100vw;
+        height: 100%;
+        justify-content: center;
+    }
     .text_container{
         padding: 0;
         align-self: center;
@@ -295,48 +306,54 @@ ul button {
     }
 
     .video_container iframe,.awardInfo_wrapper img,.simplify_content img{
-        width: 90vw;
+        width: 80%;
         align-self: center;
-        margin-left: 5vw;
-        height: 70vh;
-        margin-bottom: 2vh;
+        margin:auto;
+        height: 70%;
+        margin-bottom: 10vh;
     }
 
     .review_text,.importance_content{
         flex-wrap: wrap;
     }
     .review_wrapper img{
-        width: 60vw;
+        width: 60%;
         height: 100%
     }
     .awardInfo_wrapper,.simplify_content{
         flex-direction: column;
     }
+
+    /* .main_wrapper,.award_wrapper,.importance_content, .importance_wrapper, .review_wrapper, .second_wrapper{
+        flex-wrap: wrap;
+    } */
 }
 
 @media screen and (max-width:480px) {
     .checkbtn{
         display: block;
     }
+    nav{
+        display: flex;
+        width:100%;
+    }
     nav ul{
         display: flex;
         flex-direction: column;
         justify-content: unset;
+        align-self: center;
         position: fixed;
-        width: 98vw;
-        height: 80vh;
-        background-color: white;
+        width: 70%;
+        /* height: 80%; */
+        z-index: 5;
+        background-color: #FFFFFF;
         top: 10px;
-        top: -100;
         /* right: 20px; */
         /* left: 30%; */
         text-align: center;
-        margin-top:7vh ;
+        margin-top:8vh ;
         transition: all 0.10s;
     }
-    /* nav ul li{
-        color: white;
-    } */
     nav ul li a{
         font-size: 15px;
         color: #1D2951;
@@ -355,17 +372,27 @@ ul button {
         height: 2rem;
     }
 
+    .main_wrapper{
+        width: 100vw;
+        height: 100%;
+        justify-content: center;
+    }
+
     .sw_buttons button{
         display: flex;
         align-self: center;
         background-color: #3DA5D9;
-        height: 40%;
+        height: 30%;
         /* padding: .5rem; */
         margin-top:1rem ;
     }
+
     
     .second_wrapper{
     flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    align-content: center;
         
     }
     .text_container{
@@ -374,27 +401,37 @@ ul button {
         margin-bottom: 1vh;
     }
 
-    .video_container iframe,.awardInfo_wrapper img,.simplify_content img{
-        width: 90vw;
+    .video_container iframe,.awardInfo_wrapper img{
+        width: 80%;
         align-self: center;
-        margin-left: 5vw;
-        height: 30vh;
-        margin-bottom: 2vh;
+        /* margin-left: 5vw; */
+        height: 70%;
+        margin:auto;
     }
 
     .review_text,.importance_content{
         flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        flex-basis: 100%;
     }
     .review_wrapper img{
-        width: 65vw;
+        width: 100%;
     }
     .awardInfo_wrapper,.simplify_content{
         flex-direction: column;
+    }
+    .simplify_content img{
+        width: 90vw;
+        height: 50vh;
     }
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
 
+    nav{
+        width: 100%;
+    }
     .button2{
         width: 7rem;
         padding: 0;
@@ -409,6 +446,12 @@ ul button {
         margin-top:1rem ;
     }
     
+    .main_wrapper{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+
     .second_wrapper{
     flex-direction: column;
         
@@ -420,23 +463,23 @@ ul button {
     }
 
     .awardInfo_wrapper img,.simplify_content img{
-        width: 60vw;
+        width: 60%;
         align-self: center;
         margin-left: 5vw;
-        height: 50vh;
+        height: 100%;
         margin-bottom: 2vh;
     }
     .video_container iframe{
-        width: 90vw !important;
-        height: 70vh !important;
-        margin-left: 5vw;
+        width: 100% ;
+        height: 70%;
+        padding-bottom: 5vh;
     }
 
     .review_text,.importance_content{
         flex-wrap: wrap;
     }
     .review_wrapper img{
-        width: 60vw;
+        width: 100%;
         height: 100%
     }
     .awardInfo_wrapper,.simplify_content{
@@ -444,10 +487,10 @@ ul button {
     }
 }
 
-@media screen and (min-width:480px)and (max-width:588px){
+/* @media screen and (min-width:480px)and (max-width:588px){
     
     .sw_buttons button{
         display: flex;
         flex-direction: column;
     }
-}
+} */
